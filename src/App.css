@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+}
+h2{
+    font-family:'Rubik', sans-serif;
+}
+#headimg{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
