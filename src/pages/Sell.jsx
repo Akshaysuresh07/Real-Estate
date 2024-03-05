@@ -16,8 +16,8 @@ function Sell() {
    <div className='d-flex justify-content-between'>
       
     <div className='m-5'>
-    <h2 className='fs-1 ' ><span className='text-danger'>Sell</span> your dream Property with us.</h2>
-    <p className='mt-3'>Add or book your ideal property with just a single click.</p>
+    <h2 className='fs-1 ' ><span style={{color:'#FC766AFF'}} className=''>Sell</span> your dream Property with us.</h2>
+    <p style={{color:'#5B84B1FF'}} className='mt-3'>Add or book your ideal property with just a single click.</p>
 
     </div>
       

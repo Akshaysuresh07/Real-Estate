@@ -28,7 +28,7 @@ function Favourite() {
 
           <div className='m-5'>
             <h2 className='fs-1 ' >Here is your <span className='text-warning'>Interested Property</span> lists.</h2>
-            <p className='mt-3 text'>Choose your dream property with us..</p>
+            <p style={{color:'#5B84B1FF'}} className='mt-3 text'>Choose your dream property with us..</p>
 
           </div>
 

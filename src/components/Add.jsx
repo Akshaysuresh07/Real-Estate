@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { Modal, Button, Form, FloatingLabel } from 'react-bootstrap';
 import { uploadPlotApi } from '../services/allApis';
@@ -56,7 +57,7 @@ function Add({setUploadResponse}) {
   return (
     <>
       <Button className='p-3 ms-5' variant="dark" onClick={handleShow}>
-        Launch demo modal <i className="fa-solid fa-upload ps-3"></i>
+        Add new property <i className="fa-solid fa-upload ps-3"></i>
       </Button>
 
       <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
