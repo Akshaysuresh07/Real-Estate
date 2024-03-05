@@ -41,7 +41,7 @@ function Favourite() {
 
 
         <Row style={{ width: '100%' }}>
-          {favouritePlots.length > 0 ? (
+          {favouritePlots?.length > 0 ? (
             favouritePlots.map((house, index) => (
               <Col key={index} className='mb-4 ' sm={12} md={6} lg={4}>
                 <Card className='ms-5' style={{ width: '18rem' }}>

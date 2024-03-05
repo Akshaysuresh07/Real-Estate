@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import { Card, Modal } from 'react-bootstrap'
-import { addFavouriteApi, deletePlotApi } from '../services/allApis';
+import { addFavouriteApi, deletePlotApi, getFavouriteApi, removeFavouriteApi } from '../services/allApis';
 
 function BuyCard({ displayData, setDeleteVideoResponse}) {
   const [lgShow, setLgShow] = useState(false);
@@ -9,16 +9,19 @@ function BuyCard({ displayData, setDeleteVideoResponse}) {
   const handleShow = () => setLgShow(true);
 
   const handleRemove=async(id)=>{
+    await removeFavouriteApi(id)
     const result=await deletePlotApi(id)
     console.log(result.data);
     setDeleteVideoResponse(result.data)
+  
+   setPlotFav(false)
 
 
 
   }
   const handleFavourite=async()=>{
     setPlotFav(true)
-    const{houseName,id, imageUrl,houseSpecification,price,videoUrl}=displayData
+    const{houseName,id,imageUrl,houseSpecification,price,videoUrl}=displayData
 
     await addFavouriteApi({houseName,imageUrl,id,houseSpecification,price,videoUrl})
   alert(` ${houseName}Added to favourite`)
